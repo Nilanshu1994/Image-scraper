@@ -1,7 +1,7 @@
 var mongoose = require("mongoose");
 var mongomodels = require("../models/model");
 
-mongoose.connect("mongodb://nilanshu:imagescraper@ds129939.mlab.com:29939/searchdata");
+mongoose.connect(process.env.DATABASEURL);
 
 module.exports = {
     searchcreate : (data) =>{

@@ -41,7 +41,7 @@ app.get("/searcheddata", function(req,res){
 });
 
  //Server Initiation
- app.listen(3000, ()=>{
+ app.listen(process.env.PORT, process.env.IP, ()=>{
    console.log("The Server Has Started!");
 }); 
 
