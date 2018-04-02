@@ -1,0 +1,20 @@
+{
+  "name": "imagescraper",
+  "version": "1.0.0",
+  "description": "Scrape and show images",
+  "main": "app",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+,"start": "node app.js"  },
+  "author": "Nilanshu",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "image-downloader": "^3.3.0",
+    "images-scraper": "^2.0.11",
+    "jimp": "^0.2.28",
+    "mongoose": "^5.0.12"
+  }
+}
