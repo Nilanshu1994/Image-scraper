@@ -30,7 +30,7 @@ app.post("/search", function(req,res){
      .then(images => controller.downloadfunc(images,req.body.search))
      .then(() => mongodata.searchcreate(req.body.search))
      .catch((err) => console.log("scrape :" ,err))
-     setTimeout(() => res.send("success"), 28000);
+     res.send("success");
     });
 
 // Route to Get all searched terms from database
